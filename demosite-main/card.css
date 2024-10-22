@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 50vh;
+    width: 50vw;
+    background: linear-gradient(90deg, rgb(12, 58, 80) ,rgb(0, 0, 0));
+    /* background-color: rgb(4, 31, 45); */
+    color: rgb(214, 233, 242);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 10px;
+    padding: 20px;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#img{
+    height: 30vh;
+    width: 15vw;
+    background: url(user2.jpg);
+    border-radius: 8px;
+    background-size: cover;
+    border: 2px solid rgb(214, 233, 242);
+}
+h2{
+text-decoration: underline;
+padding-bottom: 10px;
+color: rgb(189, 188, 188);
+ text-align: center; 
+}
+h2:hover{
+    color: rgb(150, 149, 149);
+}
+#info{
+    padding: 10px;
+    height: 45vh;
+    /* text-align: center; */
+    width: 30vw;
+    line-height: 15px;
+    /* border: 1px solid rgb(4, 4, 92); */
+}

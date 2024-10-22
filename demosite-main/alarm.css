@@ -1,0 +1,185 @@
+:root {
+  --background-color:navy;
+  --text-color: #116ba8;
+  --highlight-color : #083f64;
+  --shade-color :#FF9494;
+
+}
+.aside{
+    width: 400px;
+}
+.alarm-header h2{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+  .alarm-container {
+    color: var(--text-color);
+    width: 100%;
+    background-color:transparent;
+    padding: 20px;
+    border-radius: 5px;
+
+    margin-top: 20px;
+  }
+  .timer{
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  .alarm-form{
+    
+    border-style: none;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+  }
+.timer input{
+    color: var(--highlight-color);
+    font-weight: bolder;
+    margin-right: 10px;
+    width: 70%;
+    padding: 20px;
+
+}
+.alarm-form select{
+    
+    
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 99%;
+    
+}
+.message-input{
+    
+    width: 99%;
+    padding: 10px;
+}
+
+.alarm-form button{
+    width: 99%;
+    background-color: orange;
+    border-style: none;
+    padding: 10px;
+    font-weight: bolder;
+    color: white;
+    font-size: 25px;
+    margin-top: 10px;
+}
+.alert-box {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  justify-content: center;
+  align-items: center;
+}
+
+.alert-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  width: 300px;
+}
+.AlarmList{
+  
+  height: 100%;
+  padding: 10px;
+  margin-top: 100px;
+}
+.cardA{
+  border-radius: 10px;
+  background-color: var(--highlight-color);
+  padding: 20px;
+  color: var(--text-color);
+  margin-bottom: 10px;
+}
+.cardA span{
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cardA span h1{
+  color:white;
+  font-size: 25px;
+  font-weight: bolder;
+}
+.cardA span p{
+  color:white;
+  font-size: 20px;
+}
+.icon-large {
+  font-size: 50px; /* Large size */
+  color: orange; /* Blue color */
+  transition: transform 0.5s ease; 
+}
+.icon-large:hover{
+  cursor: pointer;
+  color: navy;
+  transform: rotate(85deg);
+}
+/* medicine */
+.cards {
+  display: flex;
+  flex-direction:row;
+  gap: 5px;
+}
+
+.cards .red {
+  background-color: #f43f5e;
+}
+
+.cards .blue {
+  background-color: #3b82f6;
+}
+
+.cards .green {
+  background-color: #22c55e;
+}
+
+.cards .cardi {
+  display: flex;
+  padding-top: 3px;
+  line-height: 0;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* text-align: center; */
+  height: 200px;
+  width: 150px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: 400ms;
+}
+
+.cards .cardi p.tip {
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.cards .cardi p.second-text {
+  font-size: .7em;
+}
+
+.cards .cardi:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.cards:hover > .cardi:not(:hover) {
+  filter: blur(10px);
+  transform: scale(0.9, 0.9);
+}
+.second{
+  padding: 30px;
+}
+#text{
+  text-align: center;
+}
